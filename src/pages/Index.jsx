@@ -1,12 +1,13 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ConfettiEffect from '../components/ConfettiEffect';
 
 const Index = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="text-center">
-        <h1 className="text-3xl">Your Blank Canvas</h1>
-        <p>Chat with the agent to start making edits.</p>
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-white mb-4">Rad Confetti App</h1>
+        <p className="text-xl text-white">Click the button to celebrate with confetti!</p>
       </div>
+      <ConfettiEffect />
     </div>
   );
 };
